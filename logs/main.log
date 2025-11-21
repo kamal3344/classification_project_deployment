@@ -1,0 +1,201 @@
+2025-11-20 10:33:13,526 - INFO - The Data loded Successfully 
+2025-11-20 10:33:13,526 - INFO - we have : 150002 Rows and 18 Columns
+2025-11-20 10:33:13,644 - INFO - NPA Status                                  0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+Gender                                      0
+Region                                      0
+MonthlyIncome                           29731
+Rented_OwnHouse                             0
+Occupation                                  0
+Education                                   0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+Good_Bad                                    0
+dtype: int64
+2025-11-20 10:33:13,681 - INFO - MonthlyIncome columns data type : float64
+2025-11-20 10:33:13,681 - INFO - NumberOfDependents columns data type : float64
+2025-11-20 10:33:13,742 - INFO - Training Data size : (120000, 16)
+2025-11-20 10:33:13,743 - INFO - Test Data Size : (30000, 16)
+2025-11-20 10:33:14,058 - INFO - Missing values completed Successfully
+2025-11-20 10:33:14,100 - INFO - =======Training Numerical columns==============
+2025-11-20 10:33:14,100 - INFO - Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-11-20 10:33:14,101 - INFO - =======Training Categorical columns==============
+2025-11-20 10:33:14,101 - INFO - Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-11-20 10:33:14,101 - INFO - =======Testing Numerical columns==============
+2025-11-20 10:33:14,102 - INFO - Index(['NPA Status', 'RevolvingUtilizationOfUnsecuredLines', 'age',
+       'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio',
+       'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate',
+       'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse',
+       'MonthlyIncome_replaced', 'NumberOfDependents_replaced'],
+      dtype='object')
+2025-11-20 10:33:14,102 - INFO - =======Testing Categorical columns==============
+2025-11-20 10:33:14,102 - INFO - Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-11-20 10:33:16,908 - INFO - NPA Status_yeo                              0
+RevolvingUtilizationOfUnsecuredLines_yeo    0
+age_yeo                                     0
+NumberOfTime30-59DaysPastDueNotWorse_yeo    0
+DebtRatio_yeo                               0
+NumberOfOpenCreditLinesAndLoans_yeo         0
+NumberOfTimes90DaysLate_yeo                 0
+NumberRealEstateLoansOrLines_yeo            0
+NumberOfTime60-89DaysPastDueNotWorse_yeo    0
+MonthlyIncome_replaced_yeo                  0
+NumberOfDependents_replaced_yeo             0
+dtype: int64
+2025-11-20 10:33:17,240 - INFO - Confirm Again In Main File
+2025-11-20 10:33:17,240 - INFO - X_train_num_column_Names : Index(['NPA Status_yeo_trim', 'RevolvingUtilizationOfUnsecuredLines_yeo_trim',
+       'age_yeo_trim', 'NumberOfTime30-59DaysPastDueNotWorse_yeo_trim',
+       'DebtRatio_yeo_trim', 'NumberOfOpenCreditLinesAndLoans_yeo_trim',
+       'NumberOfTimes90DaysLate_yeo_trim',
+       'NumberRealEstateLoansOrLines_yeo_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_yeo_trim',
+       'MonthlyIncome_replaced_yeo_trim',
+       'NumberOfDependents_replaced_yeo_trim'],
+      dtype='object') -> (120000, 11)
+2025-11-20 10:33:17,241 - INFO - X_test_num_column_Names : Index(['NPA Status_yeo_trim', 'RevolvingUtilizationOfUnsecuredLines_yeo_trim',
+       'age_yeo_trim', 'NumberOfTime30-59DaysPastDueNotWorse_yeo_trim',
+       'DebtRatio_yeo_trim', 'NumberOfOpenCreditLinesAndLoans_yeo_trim',
+       'NumberOfTimes90DaysLate_yeo_trim',
+       'NumberRealEstateLoansOrLines_yeo_trim',
+       'NumberOfTime60-89DaysPastDueNotWorse_yeo_trim',
+       'MonthlyIncome_replaced_yeo_trim',
+       'NumberOfDependents_replaced_yeo_trim'],
+      dtype='object') -> (30000, 11)
+2025-11-20 10:33:17,241 - INFO - Outliers handled SuccessFully
+2025-11-20 10:33:17,242 - INFO - Before Feature selection
+2025-11-20 10:33:17,242 - INFO - (120000, 11)
+2025-11-20 10:33:17,242 - INFO - (30000, 11)
+2025-11-20 10:33:17,349 - INFO - After Feature selection
+2025-11-20 10:33:17,350 - INFO - (120000, 4)
+2025-11-20 10:33:17,350 - INFO - (30000, 4)
+2025-11-20 10:33:17,350 - INFO - Total Numerical columns in tranining data : 4
+2025-11-20 10:33:17,350 - INFO - Total Numerical columns in testing data : 4
+2025-11-20 10:33:17,350 - INFO - Total Categorical columns in tranining data : 5
+2025-11-20 10:33:17,350 - INFO - Total Categorical columns in testing data : 5
+2025-11-20 10:33:17,350 - INFO - Numerical column names : Index(['age_yeo_trim', 'NumberOfOpenCreditLinesAndLoans_yeo_trim',
+       'NumberRealEstateLoansOrLines_yeo_trim',
+       'MonthlyIncome_replaced_yeo_trim'],
+      dtype='object')
+2025-11-20 10:33:17,351 - INFO - Categorical column names : Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-11-20 10:33:17,351 - INFO - Before Converting into Numeircal
+2025-11-20 10:33:17,351 - INFO - Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-11-20 10:33:17,386 - INFO - Gender             0
+Region             0
+Rented_OwnHouse    0
+Occupation         0
+Education          0
+dtype: int64
+2025-11-20 10:33:17,386 - INFO - Before Converting into Numeircal
+2025-11-20 10:33:17,386 - INFO - Index(['Gender', 'Region', 'Rented_OwnHouse', 'Occupation', 'Education'], dtype='object')
+2025-11-20 10:33:17,396 - INFO - Gender             0
+Region             0
+Rented_OwnHouse    0
+Occupation         0
+Education          0
+dtype: int64
+2025-11-20 10:33:17,901 - INFO - After Converting into Numeircal
+2025-11-20 10:33:17,902 - INFO - Index(['Gender_Male', 'Region_East', 'Region_North', 'Region_South',
+       'Region_West', 'Rented_OwnHouse_Od', 'Occupation_Od', 'Education_Od'],
+      dtype='object')
+2025-11-20 10:33:17,905 - INFO - Gender_Male           0
+Region_East           0
+Region_North          0
+Region_South          0
+Region_West           0
+Rented_OwnHouse_Od    0
+Occupation_Od         0
+Education_Od          0
+dtype: int64
+2025-11-20 10:33:17,905 - INFO - After Converting into Numeircal
+2025-11-20 10:33:17,905 - INFO - Index(['Gender_Male', 'Region_East', 'Region_North', 'Region_South',
+       'Region_West', 'Rented_OwnHouse_Od', 'Occupation_Od', 'Education_Od'],
+      dtype='object')
+2025-11-20 10:33:17,907 - INFO - Gender_Male           0
+Region_East           0
+Region_North          0
+Region_South          0
+Region_West           0
+Rented_OwnHouse_Od    0
+Occupation_Od         0
+Education_Od          0
+dtype: int64
+2025-11-20 10:33:17,922 - INFO - Final Training data
+2025-11-20 10:33:17,923 - INFO - Index(['age_yeo_trim', 'NumberOfOpenCreditLinesAndLoans_yeo_trim',
+       'NumberRealEstateLoansOrLines_yeo_trim',
+       'MonthlyIncome_replaced_yeo_trim', 'Gender_Male', 'Region_East',
+       'Region_North', 'Region_South', 'Region_West', 'Rented_OwnHouse_Od',
+       'Occupation_Od', 'Education_Od'],
+      dtype='object')
+2025-11-20 10:33:17,950 - INFO -         age_yeo_trim  NumberOfOpenCreditLinesAndLoans_yeo_trim  ...  Occupation_Od  Education_Od
+49515      26.900309                                  1.352471  ...            4.0           3.0
+11989      13.309492                                  4.053074  ...            0.0           4.0
+44351      18.887457                                  4.254859  ...            0.0           0.0
+35088      16.824935                                  4.053074  ...            4.0           1.0
+99927      17.757565                                  3.614940  ...            3.0           4.0
+100306     13.040048                                  4.806734  ...            1.0           3.0
+73561      16.824935                                  3.614940  ...            0.0           0.0
+116834     20.196742                                  2.837959  ...            4.0           4.0
+17881      17.526925                                  2.532317  ...            4.0           4.0
+12853      25.976269                                  2.837959  ...            0.0           4.0
+
+[10 rows x 12 columns]
+2025-11-20 10:33:17,955 - INFO - age_yeo_trim                                0
+NumberOfOpenCreditLinesAndLoans_yeo_trim    0
+NumberRealEstateLoansOrLines_yeo_trim       0
+MonthlyIncome_replaced_yeo_trim             0
+Gender_Male                                 0
+Region_East                                 0
+Region_North                                0
+Region_South                                0
+Region_West                                 0
+Rented_OwnHouse_Od                          0
+Occupation_Od                               0
+Education_Od                                0
+dtype: int64
+2025-11-20 10:33:17,955 - INFO - Final Testing data
+2025-11-20 10:33:17,955 - INFO - Index(['age_yeo_trim', 'NumberOfOpenCreditLinesAndLoans_yeo_trim',
+       'NumberRealEstateLoansOrLines_yeo_trim',
+       'MonthlyIncome_replaced_yeo_trim', 'Gender_Male', 'Region_East',
+       'Region_North', 'Region_South', 'Region_West', 'Rented_OwnHouse_Od',
+       'Occupation_Od', 'Education_Od'],
+      dtype='object')
+2025-11-20 10:33:17,984 - INFO -        age_yeo_trim  NumberOfOpenCreditLinesAndLoans_yeo_trim  ...  Occupation_Od  Education_Od
+6202      21.316168                                  2.181130  ...            4.0           2.0
+18843     14.466362                                  3.350361  ...            0.0           0.0
+4099      15.328232                                  2.517686  ...            0.0           0.0
+7612      23.439595                                  1.798203  ...            4.0           0.0
+16850     19.337684                                  3.095817  ...            4.0           4.0
+16195     18.570105                                  4.218277  ...            0.0           4.0
+26855     18.827650                                  3.350361  ...            1.0           3.0
+6878      19.841257                                  4.761616  ...            0.0           0.0
+16350     21.316168                                  2.820009  ...            4.0           0.0
+28141     24.126450                                  4.019446  ...            2.0           4.0
+
+[10 rows x 12 columns]
+2025-11-20 10:33:17,986 - INFO - age_yeo_trim                                0
+NumberOfOpenCreditLinesAndLoans_yeo_trim    0
+NumberRealEstateLoansOrLines_yeo_trim       0
+MonthlyIncome_replaced_yeo_trim             0
+Gender_Male                                 0
+Region_East                                 0
+Region_North                                0
+Region_South                                0
+Region_West                                 0
+Rented_OwnHouse_Od                          0
+Occupation_Od                               0
+Education_Od                                0
+dtype: int64
+2025-11-20 10:33:17,986 - INFO - (120000, 12)
+2025-11-20 10:33:17,986 - INFO - (30000, 12)
+2025-11-20 10:33:17,986 - INFO - (120000,)

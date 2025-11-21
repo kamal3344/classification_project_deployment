@@ -1,0 +1,66 @@
+2025-11-19 10:52:42,408 - INFO - ======KNN========
+2025-11-19 10:53:10,185 - INFO - Test Accuracy KNN : 0.8688
+2025-11-19 10:53:30,745 - INFO - Test Confusion KNN : [[  928  1028]
+ [ 2908 25136]]
+2025-11-19 10:54:05,800 - INFO - Test Report KNN :               precision    recall  f1-score   support
+
+           0       0.24      0.47      0.32      1956
+           1       0.96      0.90      0.93     28044
+
+    accuracy                           0.87     30000
+   macro avg       0.60      0.69      0.62     30000
+weighted avg       0.91      0.87      0.89     30000
+
+2025-11-19 10:54:35,779 - INFO - ======NB========
+2025-11-19 10:54:36,085 - INFO - Test Accuracy NB : 0.6753
+2025-11-19 10:54:36,137 - INFO - Test Confusion NB : [[ 1396   560]
+ [ 9181 18863]]
+2025-11-19 10:54:36,210 - INFO - Test Report NB :               precision    recall  f1-score   support
+
+           0       0.13      0.71      0.22      1956
+           1       0.97      0.67      0.79     28044
+
+    accuracy                           0.68     30000
+   macro avg       0.55      0.69      0.51     30000
+weighted avg       0.92      0.68      0.76     30000
+
+2025-11-19 10:54:36,232 - INFO - ======LR========
+2025-11-19 10:54:36,653 - INFO - Test Accuracy LR : 0.7215666666666667
+2025-11-19 10:54:36,665 - INFO - Test Confusion LR : [[ 1440   516]
+ [ 7837 20207]]
+2025-11-19 10:54:36,735 - INFO - Test Report LR :               precision    recall  f1-score   support
+
+           0       0.16      0.74      0.26      1956
+           1       0.98      0.72      0.83     28044
+
+    accuracy                           0.72     30000
+   macro avg       0.57      0.73      0.54     30000
+weighted avg       0.92      0.72      0.79     30000
+
+2025-11-19 10:54:36,740 - INFO - ======DT========
+2025-11-19 10:54:41,983 - INFO - Test Accuracy DT : 0.7207
+2025-11-19 10:54:41,998 - INFO - Test Confusion DT : [[ 1296   660]
+ [ 7719 20325]]
+2025-11-19 10:54:42,034 - INFO - Test Report DT :               precision    recall  f1-score   support
+
+           0       0.14      0.66      0.24      1956
+           1       0.97      0.72      0.83     28044
+
+    accuracy                           0.72     30000
+   macro avg       0.56      0.69      0.53     30000
+weighted avg       0.91      0.72      0.79     30000
+
+2025-11-19 10:54:42,046 - INFO - ======RF========
+2025-11-19 10:54:45,291 - INFO - Test Accuracy RF : 0.7770666666666667
+2025-11-19 10:54:45,331 - INFO - Test Confusion RF : [[ 1186   770]
+ [ 5918 22126]]
+2025-11-19 10:54:45,424 - INFO - Test Report RF :               precision    recall  f1-score   support
+
+           0       0.17      0.61      0.26      1956
+           1       0.97      0.79      0.87     28044
+
+    accuracy                           0.78     30000
+   macro avg       0.57      0.70      0.57     30000
+weighted avg       0.91      0.78      0.83     30000
+
+2025-11-19 10:54:45,459 - INFO - ======AUC ROC========
